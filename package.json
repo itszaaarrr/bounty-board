@@ -1,0 +1,49 @@
+{
+  "name": "armchain-bounty-board",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "compile": "hardhat compile",
+    "test:contracts": "hardhat test",
+    "verify:contracts": "hardhat run scripts/verify-contracts.js",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:armchain-local": "hardhat run scripts/deploy.js --network armchainLocal",
+    "deploy:testnet": "hardhat run scripts/deploy.js --network armchainTestnet",
+    "deploy:mainnet": "hardhat run scripts/deploy.js --network armchain",
+    "node": "hardhat node",
+    "update-addresses": "node scripts/update-addresses.js"
+  },
+  "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.15",
+    "@radix-ui/react-dropdown-menu": "^2.1.16",
+    "@radix-ui/react-tabs": "^1.1.13",
+    "@radix-ui/react-toast": "^1.2.15",
+    "@radix-ui/react-tooltip": "^1.2.8",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "ethers": "^6.16.0",
+    "lucide-react": "^0.563.0",
+    "next": "16.1.6",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "tailwind-merge": "^3.4.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@openzeppelin/contracts": "^5.0.0",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "dotenv": "^16.3.1",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "hardhat": "^2.19.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
